@@ -1,5 +1,5 @@
-import express from "express"
-import { userController } from "./index.js"
+import express from 'express'
+import { userController } from './index.js'
 
 const router = express.Router()
 

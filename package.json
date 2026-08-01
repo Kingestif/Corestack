@@ -1,36 +1,36 @@
 {
-  "name": "Corestack",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "dev": "nodemon --exec tsx ./src/server.ts",
-    "build": "tsc",
-    "start": "node ./dist/server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.15.1",
-      "onFail": "download"
+    "name": "Corestack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon --exec tsx ./src/server.ts",
+        "build": "tsc",
+        "start": "node ./dist/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "^11.15.1",
+            "onFail": "download"
+        }
+    },
+    "type": "module",
+    "dependencies": {
+        "express": "^5.2.1",
+        "morgan": "^1.11.0"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.6",
+        "@types/morgan": "^1.9.10",
+        "@types/node": "^26.1.1",
+        "dotenv": "^17.4.2",
+        "nodemon": "^3.1.14",
+        "prettier": "3.9.6",
+        "tsx": "^4.23.1",
+        "typescript": "^7.0.2"
     }
-  },
-  "type": "module",
-  "dependencies": {
-    "express": "^5.2.1",
-    "morgan": "^1.11.0"
-  },
-  "devDependencies": {
-    "@types/express": "^5.0.6",
-    "@types/morgan": "^1.9.10",
-    "@types/node": "^26.1.1",
-    "dotenv": "^17.4.2",
-    "nodemon": "^3.1.14",
-    "prettier": "3.9.6",
-    "tsx": "^4.23.1",
-    "typescript": "^7.0.2"
-  }
 }

@@ -1,6 +1,6 @@
-import { UserController } from "./user.controller.js";
-import { PrismaUserRepository } from "./user.repository.js";
-import { UserService } from "./user.service.js";
+import { UserController } from './user.controller.js'
+import { PrismaUserRepository } from './user.repository.js'
+import { UserService } from './user.service.js'
 
 const repository = new PrismaUserRepository()
 
