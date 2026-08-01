@@ -1,0 +1,14 @@
+# Ignore artifacts:
+build
+dist
+
+coverage
+
+node_modules/
+
+.env
+.env.*
+
+pnpm-lock.yaml
+
+.vscode
