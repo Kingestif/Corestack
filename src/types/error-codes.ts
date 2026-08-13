@@ -1,7 +1,8 @@
 export type ErrorCode =
-    | 'USER_NOT_FOUND'
+    | 'NOT_FOUND'
     | 'VALIDATION_ERROR'
     | 'UNAUTHORIZED'
     | 'FORBIDDEN'
-    | 'CONFLICT'
-    | 'INTERNAL_SERVER_ERROR'
+    | 'RESOURCE_ALREADY_EXISTS'
+    | 'BAD_REQUEST'
+    | 'RESOURCE_ALREADY_EXISTS'
