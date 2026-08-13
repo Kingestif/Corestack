@@ -2,7 +2,7 @@ import express from 'express'
 import morgan from 'morgan'
 import userRoutes from './features/users/user.route.js'
 import healthRoutes from './features/health/health.route.js'
-import { errorHandler } from './utils/errorHandler.js'
+import { errorHandler } from './middlewares/errorHandler.js'
 
 const app = express()
 

@@ -6,7 +6,7 @@ export class UserService {
 
     async getUser(id: string) {
         const response = await this.repo.getUser(id)
-        throw new AppError(404, 'USER_NOT_FOUND', 'user not found')
+        // throw new AppError(404, 'USER_NOT_FOUND', 'user not found')
         return response
     }
 }
