@@ -1,4 +1,4 @@
-import { AppError } from '../../utils/errors/appError.js'
+import { NotFoundError } from '../../utils/errors/appError.js'
 import type { userRepository } from './user.repository.js'
 
 export class UserService {
@@ -6,7 +6,7 @@ export class UserService {
 
     async getUser(id: string) {
         const response = await this.repo.getUser(id)
-        throw new AppError('NOT_FOUND', 'user not found', 404)
+        throw new NotFoundError()
         return response
     }
 }
