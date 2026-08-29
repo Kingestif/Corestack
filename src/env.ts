@@ -5,6 +5,7 @@ dotenv.config()
 
 const envSchema = z.object({
     PORT: z.string(),
+    LOG_LEVEL: z.string(),
 })
 
 type Env = z.infer<typeof envSchema>
