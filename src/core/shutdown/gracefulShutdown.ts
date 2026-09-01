@@ -5,7 +5,7 @@ export const gracefulShutdown = (server: Server, signal: string) => {
     logger.info(`Received ${signal}. Starting graceful shutdown...`)
 
     server.close(() => {
-        console.log('HTTP server closed')
+        logger.info('HTTP server closed')
         process.exit(0)
     })
 }
