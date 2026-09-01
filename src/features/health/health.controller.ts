@@ -7,7 +7,7 @@ export const health = async (_req: Request, res: Response) => {
 }
 
 export const readiness = async (_req: Request, res: Response) => {
-    //TODO add database, redis....check
+    //Add database, redis...related checks
     res.status(200).json({
         status: 'ready',
     })

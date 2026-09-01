@@ -12,14 +12,12 @@
         "noUncheckedIndexedAccess": true,
         "exactOptionalPropertyTypes": true,
 
-        // Style Options
         "noImplicitReturns": true,
         "noImplicitOverride": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
 
-        // Recommended Options
         "strict": true,
         "verbatimModuleSyntax": true,
         "isolatedModules": true,
