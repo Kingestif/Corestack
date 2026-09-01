@@ -6,9 +6,11 @@ import { errorHandler } from './middlewares/errorHandler.js'
 import { limiter } from './middlewares/rateLimiter.js'
 import helmet from 'helmet'
 import compression from 'compression'
+import cors from 'cors'
 
 const app = express()
 
+app.use(cors())
 app.use(helmet())
 app.use(compression())
 app.use(express.json())
