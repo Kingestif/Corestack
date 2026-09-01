@@ -1,5 +1,5 @@
 import app from './app.js'
-import { ENV } from './env.js'
+import { ENV } from './config/env.js'
 
 const port = Number(ENV.PORT)
 

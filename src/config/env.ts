@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const envSchema = z.object({
-    PORT: z.string(),
+    PORT: z.coerce.number(),
     LOG_LEVEL: z.string(),
     RATE_LIMIT_WINDOW: z.coerce.number(),
     RATE_LIMIT_REQUEST: z.coerce.number(),
