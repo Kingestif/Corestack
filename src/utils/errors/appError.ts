@@ -47,6 +47,12 @@ export class NotFoundError extends AppError {
     }
 }
 
+export class RateLimitError extends AppError {
+    constructor(message: string = 'Too many requests. Please try again later') {
+        super('RATE_LIMIT_EXCEEDED', message, 429)
+    }
+}
+
 export class ConflictError extends AppError {
     constructor(
         message: string = 'A conflict occurred with the current state of the resource',

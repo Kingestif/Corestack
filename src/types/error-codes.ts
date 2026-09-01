@@ -5,4 +5,4 @@ export type ErrorCode =
     | 'FORBIDDEN'
     | 'RESOURCE_ALREADY_EXISTS'
     | 'BAD_REQUEST'
-    | 'RESOURCE_ALREADY_EXISTS'
+    | 'RATE_LIMIT_EXCEEDED'

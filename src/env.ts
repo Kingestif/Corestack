@@ -6,6 +6,8 @@ dotenv.config()
 const envSchema = z.object({
     PORT: z.string(),
     LOG_LEVEL: z.string(),
+    RATE_LIMIT_WINDOW: z.coerce.number(),
+    RATE_LIMIT_REQUEST: z.coerce.number(),
 })
 
 type Env = z.infer<typeof envSchema>
