@@ -2,6 +2,7 @@ import type { ErrorRequestHandler } from 'express'
 import { AppError } from '../utils/errors/appError.js'
 import z from 'zod'
 import { logger } from '../core/logger/logger.js'
+import { isJsonParseError } from '../types/isJsonParserError.js'
 
 export const errorHandler: ErrorRequestHandler = (error, _req, res, _next) => {
     if (error instanceof AppError) {
@@ -20,6 +21,16 @@ export const errorHandler: ErrorRequestHandler = (error, _req, res, _next) => {
             code: 'VALIDATION_ERROR',
             message: 'Invalid request data',
             details: error.issues,
+        })
+    }
+
+    if (isJsonParseError(error)) {
+        logger.warn({ err: error }, 'Invalid JSON format')
+
+        return res.status(400).json({
+            success: false,
+            code: 'BAD_REQUEST',
+            message: 'Invalid JSON format',
         })
     }
 
